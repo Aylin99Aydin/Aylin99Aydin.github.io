@@ -1,0 +1,92 @@
+<!--
+    Made by: Aylin Aydin (s2222922)
+    Bio-Informatics
+    Leiden University
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<!--Page about the microbiome-->
+<body>
+    <div class="nav-bar">
+        <div class="block">
+            <img id="mobile-open-menu" class="open-menu" src="images/menu-svgrepo-com.svg" alt="Open Navigation">
+            <nav>
+                <img id="mobile-close-menu" class="close-menu" src="images/close-cross-svgrepo-com.svg" alt="Close Navigation">
+                <ul class="opties-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="diets.html">Diets</a></li>
+                    <li class="huidige-pagina"><a href="microbiome.html">Microbiome</a></li>
+                    <li><a href="cam.html">CAM methods</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Title with sub title-->
+    <section class="omhulsel">
+        <div class="titel-webpage">
+            <h1>Treatments for Crohn’s disease</h1>
+            <h3>Methods that you might or might not have heard about </h3>
+            <h2>Microbiome</h2>
+        </div>
+    </section>
+
+    <!--Text about the microbiome-->
+    <section class="omhulsel">
+        <div class="tekstblok">
+            <p>The microbiome consists of microorganisms of thousands of different species (bacteria, fungi, parasites and viruses). All these different species will coexist in a healthy body without any problems, but if there is an imbalance in your microbiome, this can lead to a disease. The use of a microbiome investigation can especially be useful for patients who do not seek any benefit from the current medication treatments, since this may lead to a reduction of their symptoms or even remission. As a treatment option there is the use of pro- and prebiotics and fecal microbiota transplantation. However, investigation in a patient's microbiome can also be useful since Crohn's disease can be caused by environmental factors, genetic factors, immune response and the microbiome. Therefore examining the microbiome may lead to new insights about for example disease development. It can also be used to make a distinction between CD and UC and thereby be a helpful tool for the diagnosis of CD. In addition, the gut microbiome can also be used to predict the disease outcome, where this can be used for a personalized treatment. <br><br>              
+                <img class="darmen" src="images/darmen.webp" alt="gut">
+                The information that the microbiome can provide can lead to new treatment possibilities. Even though there is still much to be researched, this promising field can and is already giving a solution to patients who want or need treatments that differ from the regular use of medication.
+            </p>           
+        </div>
+    </section>
+
+    <!--Text with interview Microbiome-center-->
+    <section class="omhulsel">
+        <div class="tekstblok">
+            <h1 class="Ben-w">Interview Microbiome-center</h1>
+            <h3>The Netherlands</h3>
+            <p> <span class="dikgedrukt">Someone who has Crohn's disease may have additional complaints, such as fatigue and skin complaints. Can balancing your microbiome reduce or remedy these complaints?<br></span> 
+                No disease can be reduced to, for example, one organ, everything is interrelated. For example, an inflammation in the gut can cause other complaints, just like someone with a broken leg can also have additional complaints, such as feelings of depression. So looking at the microbiome can certainly have a positive effect on the additional complaints that a Crohn's patient experiences.
+            </p>
+            <p><span class="dikgedrukt">What is the percentage of patients who have recovered or have a clear reduction of complaints after treatment at the microbiome center? <br></span> 
+                About two-thirds of patients are satisfied or very satisfied. This includes all patients, not only IBD patients.
+            </p>
+            <p><span class="dikgedrukt">When is the best time to do a microbiome study: before the medication trajectory, during the treatment or when someone enters remission? <br></span> 
+                If a patient is in an acute phase (flare), then no, because you have to have something that works acutely.
+                <br>
+                Use in the remission phase to see if you can make remission last longer. It is also per patient, because if a patient remains in remission you do not immediately have to think of a microbiome examination, but if a patient remains unstable in remission, a microbiome examination could offer a solution. </p>
+            <p><span class="dikgedrukt">Is it also possible to conduct a microbiome study abroad? If so, which countries and what are these organizations called? <br></span> 
+                Abroad is not something comparable to the microbiome center. We are in the process of expanding to other countries in Europe, but we do not know any other example worldwide that does this. This concerns personalized probiotics, because probiotics themselves are of course also used abroad.
+            </p>
+            <img class="interview" src="images/interview-svgrepo-com.svg" alt="interview">
+        </div>
+    </section>
+
+    <!--Menu buttons that you can click on, opens and closes menu-->
+    <script>
+        const mobileBtn = document.getElementById('mobile-open-menu')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-close-menu');
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+</html>

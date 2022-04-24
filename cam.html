@@ -1,0 +1,119 @@
+<!--
+    Made by: Aylin Aydin (s2222922)
+    Bio-Informatics
+    Leiden University
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<!--Page with different CAM methods-->
+<body>
+    <div class="nav-bar">
+        <div class="block">
+            <img id="mobile-open-menu" class="open-menu" src="images/menu-svgrepo-com.svg" alt="Open Navigation">
+            <nav>
+                <img id="mobile-close-menu" class="close-menu" src="images/close-cross-svgrepo-com.svg" alt="Close Navigation">
+                <ul class="opties-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="diets.html">Diets</a></li>
+                    <li><a href="microbiome.html">Microbiome</a></li>
+                    <li class="huidige-pagina"><a href="cam.html">CAM methods</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Title with sub title-->
+    <section class="omhulsel">
+        <div class="titel-webpage">
+            <h1>Treatments for Crohn’s disease</h1>
+            <h3>Methods that you might or might not have heard about </h3>
+            <h2>CAM methods</h2>
+        </div>
+    </section>
+
+    <!--Text about 'What is CAM'-->
+    <section class="omhulsel">
+        <div class="tekstblok">
+            <h1>What is CAM?</h1>
+            <p>Treatments that fall outside the mainstream healthcare are called complementary and alternative medicine (CAMs). The distinction between a complementary medicine and an alternative medicine is: </p>
+                <ul class="cam">
+                    <li>Alternative when it is used instead of regular medicine</li>
+                    <li>Complementary when it is used in combination with regular medicine</li>
+                </ul>
+            <p> A couple of examples of CAM therapies are:</p> 
+            <ul class="cam-voorbeelden">
+                <li>Acupuncture</li>
+                <li>Herbal medicine</li>
+                <li>Homeopathy</li>
+                <li>Meditation</li>
+                <li>Probiotics</li>
+            </ul>                        
+        </div>
+    </section>
+   
+    <!--Text about 'Homeopathy'-->
+    <section class="omhulsel">
+        <div class="tekstblok">
+            <h1>Homeopathy</h1>
+            <p>Homeopathy is a type of CAM therapy that is based on the self-healing capability of the body. Samuel Hahnemann, a German doctor, is the founder of homeopathy. The idea of homeopathy is to ‘let like be cured by like’ (<span class="schuin">similia similibus curentur</span>). By taking a dilution of a specific substance, the self-healing capacity of the cell will increase and therefore someone can heal himself. This is a holistic approach, as the body and the soul are central in this method. Both need to be in balance, otherwise one can develop a disease.
+            </p>
+            <img class="homeopathie" src="images/homeopatie.jpeg" alt="homeopathy">  
+        </div>
+    </section>
+
+    <!--Text about 'Classical naturopathy'-->
+    <section class="omhulsel">
+        <div class="tekstblok">
+            <h1>Classical naturopathy</h1>
+            <p>The main goal of classical naturopathy is to find the underlying cause of a disease, in other words why there is an imbalance in the body. Here you can think about taking the wrong nutrition, not taking enough rest and stress (management). Symptoms will occur when the body is trying to fix a certain imbalance. If you listen to these signals and correct them, for example by taking rest, then the imbalance can be repaired. However, when you ignore or even suppress the signals your body is giving you, then after a while these symptoms can become a serious disease. To heal the body, classical naturopathy looks at these underlying causes of a disease and not to the disease itself, as if you correct the underlying cause, you automatically correct the disease.
+            </p>
+            <img class="naturopathy" src="images/naturopathy.jpeg" alt="naturopathy">          
+        </div>
+    </section>
+
+    <!--Text about 'Hypnotherapy'-->
+    <section class="omhulsel">
+        <div class="tekstblok">
+            <h1>Hypnotherapy</h1>
+            <p>Hypnotherapy can be used to help someone handle their stress and anxiety better. With the help of a therapist you will get into hypnosis, also known as a trance like state. To do this, the therapist can make use of verbal repetition and mental images. Hypnosis can also be used for other conditions, such as: pain control, behavior change and mental health issues. It is good to know that hypnosis is not for everyone. If you are not willing to be hypnotized, for example because you can not fully relax, then hypnosis will also be less effective. Also, if you have a psychosis or certain types of personality disorder, then do not make use of hypnotherapy. 
+            </p>
+        </div>
+    </section>
+
+    <!--Text about 'Herbalism'-->
+    <section class="omhulsel">
+        <div class="tekstblok">
+            <h1>Herbalism</h1>
+            <p>A herbalist makes use of plants, the whole or just a part of it, which can be used as a medicine. This technique has already been used for thousands of years. The focus is on the cause of a certain disease or illness and not on the symptoms someone has. Based on this, a patient will get prescribed herbal remedies that can be used in combination with other treatments.
+            </p>
+            <img class="herbalism" src="images/herbalism.jpg" alt="herbalism">           
+        </div>
+    </section>
+
+    <!--Menu buttons that you can click on, opens and closes menu-->
+    <script>
+        const mobileBtn = document.getElementById('mobile-open-menu')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-close-menu');
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+</html>

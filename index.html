@@ -1,0 +1,90 @@
+<!--
+    Made by: Aylin Aydin (s2222922)
+    Bio-Informatics
+    Leiden University
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<!--Home page of the website-->
+<body>
+    <div class="nav-bar">
+        <div class="block">
+            <img id="mobile-open-menu" class="open-menu" src="images/menu-svgrepo-com.svg" alt="Open Navigation">
+            <nav>
+                <img id="mobile-close-menu" class="close-menu" src="images/close-cross-svgrepo-com.svg" alt="Close Navigation">
+                <ul class="opties-menu">
+                    <li class="huidige-pagina"><a href="index.html">Home</a></li>
+                    <li><a href="diets.html">Diets</a></li>
+                    <li><a href="microbiome.html">Microbiome</a></li>
+                    <li><a href="cam.html">CAM methods</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Title with sub title-->
+    <section class="omhulsel">
+        <div class="titel-webpage">
+            <h1>Treatments for Crohn’s disease</h1>
+            <h3>Methods that you might or might not have heard about </h3>
+            <h2>Home</h2>
+        </div>
+    </section> 
+   
+    <!--Text about 'Why this website'-->
+    <section class="omhulsel">
+        <div class="tekstblok">
+            <h1>Why this website?</h1>
+            <p>The goal of this website is to give information about possible other (additional) treatment methods that can be used for patients who have Crohn’s disease (CD). At the moment hospitals mostly focus on which medication they should prescribe, but a suitable diet, microbiome research or CAM therapy is most of the time not mentioned. This website will give different options that you as a patient can consider using in combination with your medication or maybe instead of your medication, for example when you went into remission. It is important to realize that there is no right or wrong way when choosing a treatment. Everyone is free to do what they want, whether that is using medication, an alternative method or a combination of both. Hopefully this website will give you the information you are looking for to make an informed decision about how you as a patient want to treat your disease. 
+            </p>            
+        </div>
+    </section>
+
+    <!--Text about 'What is Crohn’s disease?'-->
+    <section class="omhulsel">
+        <div class="tekstblok">
+            <h1>What is Crohn’s disease?</h1> 
+            <p>Crohn's disease is a type of inflammatory bowel disease (IBD). The inflammation of the digestive tract can lead to diarrhea, abdominal pain, fatigue and weight loss. Four common factors that can cause CD are genetics, an immune response, environmental factors (e.g. use of antibiotics, migration) and the microbiome (dysbiosis). Another aspect that can make the disease worse and even give a higher risk of surgery is smoking. In addition, the use of oral contraceptives has also shown to be a risk factor for CD and women who use oral contraceptives may have a higher risk of surgery.<br> CD can lower a patient's quality of life. At the moment there is no cure for CD, but there are therapies that are focused on reducing the symptoms and bringing the inflammation into remission. Unfortunately, there are patients who do not benefit from the current therapies, or patients experience bad side effects of the medications. There are other methods that could help CD patients, e.g. following a diet or investigation in their microbiome, but these methods are not yet included in the current protocols to treat CD.
+            </p>
+
+            <img class="plaatje-cd" src="images/CD zelfgemaakt.jpg" alt="Symptoms for CD patients">
+            
+        </div>
+    </section>
+
+    <!--Text about 'My personal story'-->
+    <section class="omhulsel">
+        <div class="tekstblok">
+            <h1>My personal story</h1>
+            <p>I was 17 years old when I started developing symptoms of Crohn’s disease. After almost 1 year I was finally diagnosed, but not with Crohn’s disease but with ulcerative colitis. This later turned out to be Crohn’s disease. As the inflammation was really bad I quickly started with medication. After trying a lot of different medications (mesalazine, prednison, mercaptopurine and two different biologics) with no result and bad side effects, I decided to try something else: alternative medicine. By that time I was already 20 years old, battling a disease that seemed to never get any better. The CAM method that I used, and am still using, is homeopathy. The symptoms are still not completely gone, but I am really happy with where I am right now. Due to homeopathy I became a totally different person. I realized that I never allowed myself to rest, that I always had to give everything I had, even though I had no energy left. Besides that, I have also come closer to myself as a person and I have come to know myself again. Getting to know my triggers, my root causes of my disease and what works and what does not work for me is something that I would have needed in the beginning of my disease. Also focusing on nutrition, stress and lifestyle in general is something that can make or break any treatment, regular or alternative. I hope that everyone will get the information that I had to find myself. Medicine is not the only way of treating a patient. There are other possibilities. Everyone needs to find out what works the best for them, but to do so patients need to be better informed. </p>
+            
+        </div>
+    </section>
+
+    <!--Menu buttons that you can click on, opens and closes menu-->
+    <script>
+        const mobileBtn = document.getElementById('mobile-open-menu')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-close-menu');
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+</html>
